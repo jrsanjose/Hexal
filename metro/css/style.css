@@ -377,13 +377,18 @@ ul {
 	color: #fff;
 	border: 1px solid;
 	border-radius: 50%;
-	padding: 1px 4px 2px 5px;
+	padding: 2px 5px 3px 5px;
 }
 
 .icon-med img {
 	width: 55px;
 	height: 55px;
 }
+
+.side-cont{
+	padding: 0;
+}
+
 
 @media screen and (max-width: 770px) {
 	.wid100 {
@@ -397,7 +402,7 @@ ul {
 		padding: 0 13px 0 20px;
 	}
 	.container {
-		width: 770px;
+		width: 100%;
 	}
 	.navbar-nav i {
 		display: inline-block;
@@ -405,6 +410,17 @@ ul {
 	}
 	.navbar-nav {
 		margin: 0 10px !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+/*
+	.content-right {
+		 padding-left: 0;
+	}
+*/
+	.pad-r10 {
+		padding: 0;
 	}
 }
 
@@ -417,7 +433,7 @@ ul {
 		text-align: left;
 	}
 	.container {
-		width: 570px;
+		width: 100%;
 	}
 }
 
@@ -430,6 +446,7 @@ ul {
 		margin-bottom: 5px;
 	}
 }
+/*
 
 html {
 	-webkit-transition: background-color 1s;
@@ -458,3 +475,4 @@ html.loading body {
 	-webkit-transition: opacity 0;
 	transition: opacity 0;
 }
+*/
