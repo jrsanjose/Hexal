@@ -414,10 +414,17 @@ ul {
 }
 
 /* hide back of pane during swap */
-.front, .back {
+.front{
 	backface-visibility: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+}
 
+.back {
+	backface-visibility: hidden;
 	position: absolute;
+	width: 100%;
 	top: 0;
 	left: 0;
 }
@@ -489,6 +496,12 @@ ul {
 	}
 	.container {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.footer-cont i {
+		top: 35px;
 	}
 }
 
