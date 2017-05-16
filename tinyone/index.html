@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Tinyone">
 	<meta name="keywords" content="Tinyone">
+	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,11 +15,11 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
 	<div id="wrapper">
 		<header>
 			<div class="container">
-				<div class="row">
+				<div class="row nav-container">
 				    <div class="col-md-6 offset-md-3 text-center">
 				      <a href="#"><img src="images/Logo.png" alt="tinyone"></a>
 				    </div>
@@ -53,8 +54,39 @@
 		</main>
 		<footer></footer>
 	</div>
-	<!-- <button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button> -->
-
+	<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
+	<nav id="mm-menu" class="mm-menu">
+		<div class="nav-logo">
+			<img src="images/nav-logo.png" alt="tinyone">
+		</div>
+		<ul class="side-menu-list">
+			<li><a href="">we are tinyone</a></li>
+			<li><a href="">our work</a></li>
+			<li><a href="">magazine</a></li>
+			<li><a href="">portfolio</a></li>
+			<li><a href="">book a table</a></li>
+			<li><a href="">google access</a></li>
+			<li><a href="">get in touch</a></li>
+			<li><a href="">lag-out</a></li>
+		</ul>
+		<div class="media">
+			<ul>
+				<li>
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="mm-menu-mask"></div>
 	<!-- Bootstrap 4 cdn -->
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -64,6 +96,8 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 	integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
 	crossorigin="anonymous"></script>
+	
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
