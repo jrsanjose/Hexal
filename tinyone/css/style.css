@@ -20,10 +20,15 @@ h1,h2,h3{
 
 h1{
 	font-size: 48px;
+	margin-bottom: 20px;
 }
 
-h2,h3{
+h2{
 	font-size: 32px;
+}
+
+h3{
+	font-size: 22px;
 }
 
 .clearfix:after{
@@ -32,6 +37,33 @@ h2,h3{
 	content: "";
 }
 
+p{
+	color: #898989;
+}
+
+.fbold{
+	font-weight: bold;
+}
+
+.ttl-desc01{
+	color: #898989;
+	font-size: 20px;
+}
+
+.container > p{
+	margin-bottom: 70px;
+}
+
+#features, #price, #works, #team, #testimonial, #touch{
+	margin-bottom: 200px;
+}
+
+
+#wrapper .button:hover{
+	background-color: #222;
+	color: #fcdb00;
+	transition: all 0.5s ease;
+}
 
 /*Reset Bootstrap width*/
 @media (min-width: 1200px){
@@ -50,6 +82,7 @@ header{
 	position: relative;
 	height: 100vh;
 	width: 100%;
+	margin-bottom: 130px;
 }
 
 header .container{
@@ -89,6 +122,7 @@ header h1{
 	font-size: 20px;
 	padding: 0 20%;
 	margin-bottom: 60px;
+	color: #000;
 }
 
 #banner a{
@@ -100,11 +134,6 @@ header h1{
 	text-decoration: none;
 }
 
-#banner a:hover{
-	background-color: #222;
-	color: #fcdb00;
-	transition: all 0.5s ease;
-}
 
 .banner-arrow{
 	position: absolute;
@@ -302,6 +331,209 @@ button {
 	font-size: 25px;
 }
 
+
+/*Features*/
+#features{
+	text-align: center;
+}
+
+
+#features .feature-block{
+	display: table;
+}
+
+#features .feature-block i{
+	display: table-cell;
+}
+
+#features .feature-block i{
+	font-size: 45px;
+}
+
+#features .feature-content{
+	display: table-cell;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 20px;
+}
+
+#features .container .row {
+	margin-bottom: 70px;
+}
+
+
+/*Price*/
+
+#price .price-block span{
+	margin-bottom: 15px;
+}
+
+#price .price-block .fa-circle{
+	color: #ebebeb;	
+}
+
+#price .price-block .h3{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#price .price-block hr{
+	margin: 0 auto 5px;
+	border: 2px solid #000;
+	width: 45px;
+}
+
+#price .price-block a{
+	text-decoration: none;
+	color: #000;
+	border: 2px solid #000;
+	padding: 10px 15px;
+	font-weight: bold;
+	display: block;
+	width: 150px;
+	margin: 30px auto 0;
+}
+
+/*Works*/
+
+#works .row{
+	margin-bottom: 50px;
+}
+
+#works img{
+	margin-bottom: 10px;
+	width: 100%
+}
+
+/*team*/
+#team .row img{
+	margin-bottom: 30px;
+}
+
+#team .team-text{
+	color: #000;
+}
+
+#team .row ul{
+	display: inline-flex;
+}
+
+#team .row ul li{
+	margin: 0 10px;
+}
+
+#team .row ul li i{
+	color: #000;
+}
+
+#team .row ul li i:hover{
+	color: #fcdb00;
+}
+
+/*Testimonials*/
+.testi-info{
+	margin: 0 20%;
+}
+
+.testi-info i{
+	margin-bottom: 20px;
+}
+
+.testi-info .h5{
+	margin: 0;
+}
+
+.testi{
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.testi img{
+	margin-bottom: 20px;
+}
+
+.testi .h5{
+	margin: 0;
+}
+
+/*Touch*/
+#touch .row{
+	margin-bottom: 20px;
+}
+
+#touch form{
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#touch textarea,
+#touch input{
+	width: 100%;
+	border: 2px solid #000;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+#touch textarea{
+	min-height: 200px;
+}
+
+#touch button{
+	color: #fff;
+	background-color: #000;
+	padding: 10px 25px;
+}
+
+#touch button:hover{
+	color: #fcdb00;
+}
+
+/*Footer*/
+footer{
+	background: #000;
+	padding: 100px 0 200px;
+}
+
+footer .container > p{
+	margin-bottom: 50px;
+}
+
+footer h2{
+	color: #fff;
+}
+
+footer form input{
+	max-width: 100%;
+	width: 600px;
+	border: 2px solid #000;
+	padding: 10px;
+}
+
+footer form button{
+	font-weight: bold;
+	background: #fff;
+	padding: 9px 30px 11px;
+}
+
+footer button:hover{
+	color: #fcdb00;
+}
+
+footer .row{
+	text-align: left;
+	color: #fff;
+	margin-top: 120px;
+}
+
+footer .row a{
+	color: #fff;
+}
+
+
+
 /*Responsive*/
 
 @media (max-width: 768px){
@@ -337,5 +569,16 @@ button {
 	-webkit-transform: translateX(300px);
 	-ms-transform: translateX(300px);
 	transform: translateX(-300px);
+	}
+}
+
+/*Responsive Portrait*/
+@media screen and (max-width: 768px){
+	#features, #price, #works, #team, #testimonial, #touch {
+		margin-bottom: 100px;
+	}
+
+	footer form input {
+		margin-bottom: 10px;
 	}
 }
